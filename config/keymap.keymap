@@ -24,6 +24,8 @@
 &kp LSHFT  &kp Z     &kp X           &kp C         &kp V  &kp B  &kp SPACE  &kp RET  &kp N  &kp M  &kp COMMA  &kp DOT          &kp SLASH  &kp RSHFT
 &kp LGUI   &kp LALT  &kp DOWN_ARROW  &kp UP_ARROW  &mo 1  &mo 2  &mo 3      &mo 4    &mo 5  &none  &none      &kp PRINTSCREEN  &kp RALT   &kp RCTRL
             >;
+
+            label = "default";
         };
 
         layer_1 {
@@ -34,6 +36,8 @@
 &kp LSHFT  &none            &none        &none     &none       &none        &none  &none          &kp PLUS   &kp MINUS      &kp COMMA     &kp DOT          &kp SLASH  &kp RSHFT
 &kp LGUI   &kp LALT         &none        &none     &none       &none        &none  &kp BACKSPACE  &kp ENTER  &none          &none         &kp PRINTSCREEN  &kp RALT   &kp RCTRL
             >;
+
+            label = "symbol";
         };
 
         layer_2 {
@@ -44,16 +48,20 @@
 &kp LSHFT  &none     &none          &none             &none           &none                 &none                      &none       &kp PLUS               &kp MINUS        &kp COMMA          &kp DOT           &kp SLASH       &kp RSHFT
 &kp LGUI   &kp LALT  &kp LGUI       &kp LALT          &none           &none                 &mt LEFT_SHIFT LANGUAGE_1  &kp DELETE  &kp ESCAPE             &none            &none              &kp PRINTSCREEN   &kp RALT        &kp RCTRL
             >;
+
+            label = "parentheses";
         };
 
         layer_3 {
             bindings = <
-&none      &none     &none  &none  &none  &none                         &none           &none     &none     &none            &none     &none
-&none      &none     &none  &none  &none  &none                         &none           &none     &none     &none            &none     &none
-&kp LCTRL  &none     &none  &none  &none  &none  &none  &none           &none           &mkp MB1  &mkp MB2  &kp L            &kp SEMI  &none
-&kp LSHFT  &none     &none  &none  &none  &none  &none  &none           &none           &none     &none     &none            &none     &kp RSHFT
-&kp LGUI   &kp LALT  &none  &none  &none  &none  &none  &kp LANGUAGE_1  &kp LANGUAGE_2  &none     &none     &kp PRINTSCREEN  &kp RALT  &kp RCTRL
+&none      &none     &none  &none  &none  &none                         &none           &none           &none            &none            &none     &none
+&none      &none     &none  &none  &none  &none                         &none           &msc SCRL_LEFT  &msc SCRL_RIGHT  &none            &none     &none
+&kp LCTRL  &none     &none  &none  &none  &none  &none  &none           &none           &mkp MB1        &mkp MB2         &mkp MB3         &mkp MB4  &mkp MB5
+&kp LSHFT  &none     &none  &none  &none  &none  &none  &none           &none           &msc SCRL_DOWN  &msc SCRL_UP     &none            &none     &kp RSHFT
+&kp LGUI   &kp LALT  &none  &none  &none  &none  &none  &kp LANGUAGE_1  &kp LANGUAGE_2  &none           &none            &kp PRINTSCREEN  &kp RALT  &kp RCTRL
             >;
+
+            label = "mouse";
         };
 
         layer_4 {
@@ -64,6 +72,8 @@
 &kp LSHFT  &kp F11   &kp F12  &none   &none   &none    &none  &none  &none           &kp END         &kp HOME      &none            &none     &kp RSHFT
 &kp LGUI   &kp LALT  &none    &none   &none   &none    &none  &none  &none           &none           &none         &kp PRINTSCREEN  &kp RALT  &kp RCTRL
             >;
+
+            label = "arrow";
         };
 
         layer_5 {
@@ -74,6 +84,8 @@
 &kp LSHFT  &kp F23   &kp F24  &none    &none    &none    &none  &none  &none  &none         &none         &none            &none         &kp RSHFT
 &kp LGUI   &kp LALT  &none    &none    &none    &none    &none  &none  &none  &none         &none         &kp PRINTSCREEN  &kp RALT      &kp RCTRL
             >;
+
+            label = "bluetooth";
         };
     };
 };
