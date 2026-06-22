@@ -89,6 +89,8 @@
         };
     };
     &pointing_listener {
-      input-processors = <&zip_xy_scaler 1 2>;
+        // input-processors = <&zip_xy_scaler 1 2>;
+        multiplier = <1>;
+        divisor = <2>;
     };
 };
