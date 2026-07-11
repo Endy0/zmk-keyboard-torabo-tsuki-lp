@@ -106,5 +106,5 @@
 };
 
 &msc_input_listener {
-    input-processors = <&zip_scroll_scaler 3 1>;
+    input-processors = <&zip_scroll_scaler 50 1>;
 };
