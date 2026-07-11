@@ -1,17 +1,6 @@
 #include "torabo_tsuki_lp.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
-
-/ {
-    zip_scroll_scaler: zip_scroll_scaler {
-        compatible = "zmk,input-processor-scaler";
-        #input-processor-cells = <2>;
-        type = <INPUT_EV_REL>;
-        codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
-        track-remainders;
-    };
-};
 
 &pointing_listener {
     input-processors = <
@@ -30,13 +19,4 @@
 
 &size_l_transform {
     col-offset = <7>;
-};
-
-&msc {
-    time-to-max-speed-ms = <100>;
-    acceleration-exponent = <1>;
-};
-
-&msc_input_listener {
-    input-processors = <&zip_scroll_scaler 3 1>;
 };
