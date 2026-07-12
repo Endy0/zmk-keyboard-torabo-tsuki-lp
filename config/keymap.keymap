@@ -101,8 +101,8 @@
 };
 
 &msc {
-    time-to-max-speed-ms = <100>;
+    time-to-max-speed-ms = <500>;
     acceleration-exponent = <1>;
 };
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 8 1>; };
+&msc_input_listener { input-processors = <&zip_scroll_scaler 12 1>; };
